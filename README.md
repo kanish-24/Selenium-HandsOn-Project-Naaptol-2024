@@ -1,4 +1,5 @@
 # Selenium Hands-On
+# Watch Module Automation with Page Object Model
 
 ## Introduction
 This project involves automating the Watches module of an e-commerce application using Selenium WebDriver with the Page Object Model (POM) design pattern. The purpose of this project is to demonstrate how to create automated tests that ensure the functionality and reliability of the watches module. The project aims to enhance testing efficiency, improve test maintenance, and reduce the time required to validate the module's features.
@@ -7,19 +8,20 @@ This project involves automating the Watches module of an e-commerce application
 Selenium Automation | Automation Testing
 
 ## Directory Structure
-my-app/
+PageObjectModel-Construct-Week-Project-B38/
 ├─ src/
 │  ├─ main/
 │  │  ├─ java/
-│  │  │  ├─ pages/
-│  │  │  ├─ tests/
-│  │  │  ├─ utils/
-│  │  │  └─ BaseTest.java
+│  │  │  ├─ page_Classes/
 │  ├─ test/
+│  │  │  ├─ com.Utilities/
+│  │  │  ├─ utils/
+│  │  │  ├─ generics/
+│  │  │  ├─ testSuite/
+│  │  │  └─ BaseTest.java
 │  │  └─ resources/
+│  │  │  └─ config.Properties
 ├─ pom.xml
-└─ README.md
-
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
@@ -46,12 +48,14 @@ To set up and run the project locally, follow these steps:
 
 1. Clone the repository:
    bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/kanish-24/Selenium-HandsOn-Project-Naaptol-2024
    cd your-repository
-2. Install dependencies and configure the project:
+   
+3. Install dependencies and configure the project:
    Ensure you have Java and Maven installed.
    Configure your WebDriver path if needed.
-3. Run the tests using Maven:
+   
+5. Run the tests using Maven:
    mvn clean test
 
 
