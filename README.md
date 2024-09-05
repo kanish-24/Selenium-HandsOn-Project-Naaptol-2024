@@ -1,23 +1,25 @@
 # Selenium Hands-On
 
 ## Introduction
-Automate following Functionality with Selenium
-Objective:
-To build a Selenium script that automates the following process in the given URL.
+This project involves automating the Watches module of an e-commerce application using Selenium WebDriver with the Page Object Model (POM) design pattern. The purpose of this project is to demonstrate how to create automated tests that ensure the functionality and reliability of the watches module. The project aims to enhance testing efficiency, improve test maintenance, and reduce the time required to validate the module's features.
 
 ## Project Type
-Frontend | Backend | Fullstack
-
-## Deplolyed App
-Frontend: https://deployed-site.whatever
-Backend: https://deployed-site.whatever
-Database: https://deployed-site.whatever
+Selenium Automation | Automation Testing
 
 ## Directory Structure
 my-app/
-├─ backend/
-├─ frontend/
-│  ├─ ...
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  ├─ pages/
+│  │  │  ├─ tests/
+│  │  │  ├─ utils/
+│  │  │  └─ BaseTest.java
+│  ├─ test/
+│  │  └─ resources/
+├─ pom.xml
+└─ README.md
+
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
@@ -28,47 +30,50 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 ## Features
 List out the key features of your application.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Automated testing of the Watches module using Selenium WebDriver.
+- Implementation of Page Object Model (POM) for better code organization and maintenance.
+- End-to-end testing scenarios for verifying core functionalities of the module.
+- Integration with TestNG for structured test execution and reporting.
 
 ## design decisions or assumptions
-List your design desissions & assumptions
+
+- The Page Object Model (POM) design pattern is used for separating page elements and actions.
+- TestNG is used for test execution and reporting due to its flexibility and ease of use.
+Assumption: The application under test is stable, and the structure of web elements is not frequently changing.
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+To set up and run the project locally, follow these steps:
 
-```bash
-npm install my-project
-cd my-project
-npm start
-```
+1. Clone the repository:
+   bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+2. Install dependencies and configure the project:
+   Ensure you have Java and Maven installed.
+   Configure your WebDriver path if needed.
+3. Run the tests using Maven:
+   mvn clean test
+
 
 ## Usage
-Provide instructions and examples on how to use your project.
+Here's how to use the project for testing:
 
-```bash
-# Example
-```
-
-Include screenshots as necessary.
-
-## Credentials
-Provide user credentials for autheticated pages
+1. Clone the repository and set up your local environment.
+2. Run the tests using Maven as shown in the installation steps.
+3. Review the test reports generated in the target directory.
+   
+Example command:
+mvn test -Dtest=WatchModuleTest
 
 ## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
+No external APIs are used in this project. The automation focuses on UI testing of the Watches module.
 
 ## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
-
+N/A - This project does not involve backend API testing.
 
 ## Technology Stack
-List and provide a brief overview of the technologies used in the project.
-
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
+1. Selenium WebDriver: For browser automation and testing.
+2. Java: The programming language used for writing the test scripts.
+3. TestNG: For test execution, structuring, and reporting.
+4. Maven: For dependency management and build automation.
+5. Page Object Model (POM): For structuring test code and maintaining test scripts.
